@@ -1,0 +1,7 @@
+node_modules
+.sass-cache
+
+node_modules/
+thumbs.db
+.defaults.json
+.idea

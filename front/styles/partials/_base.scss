@@ -1,0 +1,136 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $f-main;
+  background: #fffaf4;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $f-second;
+  margin: 0;
+}
+
+
+
+a{
+  transition: all 0.1s ease-in-out;
+}
+.tcenter{
+  text-align: center !important;
+}
+.tleft{
+  text-align: left !important;
+}
+.tright{
+  text-align: right !important;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn{
+  padding: 0.75em 1.25em;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  i{
+    margin-left: 10px;
+  }
+  &.btn-primary{
+    background: $primary;
+    color: #fff;
+  }
+  &.btn-min{
+    padding: 0.5em 1em;
+  }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+
+.c-black{
+  color: $black !important;
+}
+
+
+.container{
+  display: block;
+  margin: 0 auto;
+  //max-width: 1200px;
+  // width: 100%;
+  height: auto;
+}
+
+section.main{
+  padding: 2em 0;
+}
+
+.section-wrap{
+  padding: 4em 0;
+  &.nopad{
+    padding: 0;
+  }
+  .image-content{
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+
+.title-page{
+  padding: 0 0 0.5em;
+  margin: 0 0 2em;
+  vertical-align: middle;
+  h2{    
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    i{
+      margin: 0 8px 0 0;
+      //-color: $primary;
+    }
+  }
+}
+
+#one-img{
+  background: url("../img/img_home_princ.jpg");
+  background-size: cover;
+}
+
+
+#quieneses_somos.section-wrap{
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1.500em;
+}
+
+
+
+.form-control{
+  border: 1px solid #ccc;
+  padding: 0.4em;
+  border-radius: 0;
+  box-shadow: none;
+}
