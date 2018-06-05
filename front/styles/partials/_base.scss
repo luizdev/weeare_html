@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: $f-main;
-  background: #fffaf4;
+  background: #fff;
 }
 
 
@@ -88,7 +88,7 @@ section.main{
 }
 
 .section-wrap{
-  padding: 4em 0;
+  padding: 6em 0;
   &.nopad{
     padding: 0;
   }
@@ -107,12 +107,14 @@ section.main{
     display: inline-block;
     color: white;
     font-size: 1.5em;
-    i{
-      margin: 0 8px 0 0;
-      //-color: $primary;
+    font-weight: 600;
+    &.subtitle{
+      font-weight: 400;
     }
   }
 }
+
+
 
 #one-img{
   background: url("../img/img_home_princ.jpg");
@@ -126,6 +128,56 @@ section.main{
   font-size: 1.500em;
 }
 
+#confian.section-wrap{
+  background: #fff;
+  .title-page{
+    text-align: center;
+    margin-bottom: 2.5em;
+    h2.subtitle{
+      
+      color: #000;
+    }
+  }
+  .list-logos{
+    text-align: center;
+    margin: 3em 0;
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 3em;
+    }
+  }
+}
+
+.item-hacemos{
+  background: #fff;
+  position: relative;
+  box-shadow: 0 0px 1px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  display: block;
+  padding: 1em;
+  &:hover{
+    box-shadow: 0 14px 56px -20px rgba(0,0,0,.64);
+    transition-timing-function: ease-out;
+    transition-duration: .15s;
+    transform: translateY(-3px);
+  }
+  h3{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .image{
+    text-align: center;
+    margin: 1em 0 2em;
+    img{
+      margin: 0 auto;
+    }
+
+  }
+}
 
 
 .form-control{

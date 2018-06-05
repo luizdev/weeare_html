@@ -1,26 +1,25 @@
 #footer{
-  background: #2c2c2c; 
-  padding: 1em 0; 
+  background: #000; 
+  padding: 3em 0 2em; 
   .block-list {
     margin: 0 0 2em;
-    .logo{
-      width: 120px;
-      margin: 0 0 0;
-      img{
-
+    &.menu{
+      ul{
+        li{
+          
+          a{            
+            text-transform: uppercase;
+          }
+        }
       }
-    }
-
-    h3{
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 0.5em;
     }
     ul{
       li{
-        a{
+        margin-bottom: 1em;
+        color: #fff;
+        font-size: 1.250em;
+        a, span{
           color: #fff;
-          font-size: 12px;
         }
       }
     }
@@ -70,5 +69,18 @@
     }
   }
     
+}
+
+#footer-bottom{
+  background: #000; 
+  padding: 2em 0; 
+  .copyrigth{
+    color: #fff;
+    font-size: 1.250em;
+    margin: 0;
+  }
+  .logo{
+    float: right;
+  }
 }
 
