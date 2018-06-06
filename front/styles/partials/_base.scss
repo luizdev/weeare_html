@@ -89,6 +89,7 @@ section.main{
 
 .section-wrap{
   padding: 6em 0;
+  position: relative;
   &.nopad{
     padding: 0;
   }
@@ -103,6 +104,11 @@ section.main{
   padding: 0 0 0.5em;
   margin: 0 0 2em;
   vertical-align: middle;
+  &.absolute{
+    position: absolute;
+    top: -60px;
+    z-index: 5;
+  }
   h2{    
     display: inline-block;
     color: white;
@@ -114,11 +120,24 @@ section.main{
   }
 }
 
-
+.cnt-table{
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cnt-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  /*text-align: center;*/
+}
 
 #one-img{
   background: url("../img/img_home_princ.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -149,6 +168,13 @@ section.main{
   }
 }
 
+#como_hacemos.section-wrap{
+  background: url("../img/bg_contacto.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
 .item-hacemos{
   background: #fff;
   position: relative;
@@ -176,6 +202,12 @@ section.main{
       margin: 0 auto;
     }
 
+  }
+  .detail{
+    ul{
+      list-style: disc;
+      padding: 0 0 0 20px;
+    }
   }
 }
 
