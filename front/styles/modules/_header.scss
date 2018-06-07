@@ -1,5 +1,9 @@
 #header{
   background: white;
+  .navbar-fixed-top{
+    background: #fff;
+    box-shadow: 0 14px 56px -20px rgba(0,0,0,.1);
+  }
   .container{
     padding-top: 1.5em;
     padding-bottom: 1.5em;

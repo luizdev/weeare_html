@@ -16,48 +16,9 @@
 		// DOM ready, take it away
 		$(window).trigger("resize");
 		initOnepagenav();
-		// Owl Hero Slider
-		$("#owl-slider-one-img").owlCarousel({
-			transitionStyle: "fade",
-			autoHeight: true,
-			navigation: false,
-			slideSpeed: 300,
-			singleItem: true,
-			pagination: true,
-			navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]	 
-		});	
-		
-		var gmapDiv = $("#google-map");
-		var gmapMarker = gmapDiv.attr("data-address");
 
-		gmapDiv.gmap3({
-			zoom: 18,
-			address: gmapMarker,
-			oomControl: true,
-			navigationControl: true,
-			scrollwheel: false,
-			styles: [
-			{
-			"featureType":"all",
-			"elementType":"all",
-				"stylers":[
-				{ "saturation":"-70" }
-				]
-			}]
-		})
-		.marker({
-			address: gmapMarker,
-			icon: assetsUrl + "/img/map_pin.png"
-		})
-		.infowindow({
-			content: "Avenida 28 de Julio 895, Miraflores"
-		})
-		.then(function (infowindow) {
-			var map = this.get(0);
-			var marker = this.get(1);
-			marker.addListener("click", function() {
-			infowindow.open(map, marker);
-			});
+		$('#fullpage').fullpage({
+			normalScrollElements: '#footer, #footer-bottom'
 		});
 		
 	});
@@ -95,7 +56,7 @@
 -------------------------------------------------------*/
 function container_full_height_init(){
 	(function($){
-		$(".container-full-height").height($(window).height());
+		//$(".container-full-height").height($(window).height());
 	})(jQuery);
 }
 

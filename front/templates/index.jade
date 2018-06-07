@@ -10,11 +10,17 @@ html(lang="es")
 
       
       
-      block content      
+      block content 
+
+
 
         section#one-img.section-wrap
           .container.container-full-height
-            h2 Pensamos en el Costumer Journey de tus clientes
+            .cnt-table
+              .cnt-table-cell.top
+                .row   
+                  .col-md-12         
+                    h2 Beneficios pensando en el <br/> Costumer Journey de tus clientes
 
         section#quieneses_somos.section-wrap.nopad
           .container.container-full-height
@@ -79,24 +85,46 @@ html(lang="es")
               .cnt-table-cell
                 .row  
                   .col-md-12
-
+                    .d-block
+                      .image
+                        img(src="img/ico_planing.png", alt="")
+                      .detail
+                        h3 Planning del Programa
+                        ul
+                         li Definición de objetivos
+                         li Inmersión y análisis de la información
+                         li Establecimiento de presupuesto
+                         li Desarrollo de Carta Gantt
+                    .d-block
+                      .image
+                        img(src="img/ico_propuesta.png", alt="")
+                      .detail
+                        h3 Propuesta de concepto
+                        ul
+                         li Comercial
+                         li Tecnológico
+                         li Información
+                         
         section#confian.section-wrap
           .container
-            .title-page
-              h2.subtitle Confían en nosotros
-            .row            
-              .col-md-12
-                ul.list-logos
-                  li
-                    a(href="#")
-                      img(src="img/logo_falabella.png", alt="")
-                  li
-                    a(href="#")
-                      img(src="img/logo_bbva.png", alt="")
-                  li
-                    a(href="#")
-                      img(src="img/logo_arellano.png", alt="")
             
+            .cnt-table
+              .cnt-table-cell
+                .title-page
+                  h2.subtitle Confían en nosotros
+                .row            
+                  .col-md-12
+                    ul.list-logos
+                      li
+                        a(href="#")
+                          img(src="img/logo_falabella.png", alt="")
+                      li
+                        a(href="#")
+                          img(src="img/logo_bbva.png", alt="")
+                      li
+                        a(href="#")
+                          img(src="img/logo_arellano.png", alt="")
+                
 
 
               

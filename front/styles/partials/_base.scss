@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: $f-main;
+  font-size: 16px !important;
   background: #fff;
 }
 
@@ -97,6 +98,9 @@ section.main{
     display: block;
     margin-bottom: 1em;
   }
+  > .container{
+    height: 100vh;
+  }
 }
 
 
@@ -108,6 +112,7 @@ section.main{
     position: absolute;
     top: -60px;
     z-index: 5;
+    display: none;
   }
   h2{    
     display: inline-block;
@@ -132,12 +137,19 @@ section.main{
   height: 100%;
   width: 100%;
   /*text-align: center;*/
+  &.top{
+    vertical-align: top;
+  }
 }
 
 #one-img{
   background: url("../img/img_home_princ.jpg");
   background-size: cover;
   background-attachment: fixed;
+  h2{
+    color: #fff;
+    margin: 2em 0 0 0;
+  }
 }
 
 

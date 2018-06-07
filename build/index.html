@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css?v=0.0.4"/>
     <link rel="stylesheet" href="css/slick.css?v=0.0.4"/>
     <link rel="stylesheet" href="css/slick-theme.css?v=0.0.4"/>
-    <link rel="stylesheet" href="css/jquery.mmenu.css?v=0.0.4"/>
+    <link rel="stylesheet" href="css/jquery.fullPage.css?v=0.0.4"/>
     <link rel="shortcut icon" href="/favicon.ico"/>
   </head>
   <body class="home">   
@@ -27,11 +27,11 @@
                 </div>
               </div>
               <div class="col-md-9 col-sm-8 col-xs-6">
-                <ul class="menu">
-                  <li><a href="#">¿Quiénes somos?</a></li>
-                  <li><a href="#">¿Qué hacemos?</a></li>
-                  <li><a href="#">¿Cómo lo hacemos?</a></li>
-                  <li><a href="#">contacto</a></li>
+                <ul class="menu local-scroll-no-offset">
+                  <li><a href="#quieneses_somos">¿Quiénes somos?</a></li>
+                  <li><a href="#que_hacemos">¿Qué hacemos?</a></li>
+                  <li><a href="#como_hacemos">¿Cómo lo hacemos?</a></li>
+                  <li><a href="#confian">Confian</a></li>
                 </ul>
               </div>
             </div>
@@ -40,7 +40,15 @@
       </header>
       <section id="one-img" class="section-wrap">
         <div class="container container-full-height">
-          <h2>Pensamos en el Costumer Journey de tus clientes</h2>
+          <div class="cnt-table">
+            <div class="cnt-table-cell top">
+              <div class="row">  
+                <div class="col-md-12">        
+                  <h2>Beneficios pensando en el <br/> Costumer Journey de tus clientes</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="quieneses_somos" class="section-wrap nopad">
@@ -126,7 +134,31 @@
           <div class="cnt-table">
             <div class="cnt-table-cell">
               <div class="row"> 
-                <div class="col-md-12"></div>
+                <div class="col-md-12">
+                  <div class="d-block">
+                    <div class="image"><img src="img/ico_planing.png" alt=""/></div>
+                    <div class="detail">
+                      <h3>Planning del Programa</h3>
+                      <ul>
+                        <li>Definición de objetivos</li>
+                        <li>Inmersión y análisis de la información</li>
+                        <li>Establecimiento de presupuesto</li>
+                        <li>Desarrollo de Carta Gantt</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-block">
+                    <div class="image"><img src="img/ico_propuesta.png" alt=""/></div>
+                    <div class="detail">
+                      <h3>Propuesta de concepto</h3>
+                      <ul>
+                        <li>Comercial</li>
+                        <li>Tecnológico</li>
+                        <li>Información</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,16 +166,20 @@
       </section>
       <section id="confian" class="section-wrap">
         <div class="container">
-          <div class="title-page">
-            <h2 class="subtitle">Confían en nosotros</h2>
-          </div>
-          <div class="row">           
-            <div class="col-md-12">
-              <ul class="list-logos">
-                <li><a href="#"><img src="img/logo_falabella.png" alt=""/></a></li>
-                <li><a href="#"><img src="img/logo_bbva.png" alt=""/></a></li>
-                <li><a href="#"><img src="img/logo_arellano.png" alt=""/></a></li>
-              </ul>
+          <div class="cnt-table">
+            <div class="cnt-table-cell">
+              <div class="title-page">
+                <h2 class="subtitle">Confían en nosotros</h2>
+              </div>
+              <div class="row">           
+                <div class="col-md-12">
+                  <ul class="list-logos">
+                    <li><a href="#"><img src="img/logo_falabella.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo_bbva.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo_arellano.png" alt=""/></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -160,7 +196,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6">           
+            <div class="col-md-6 col-sm-6 col-xs-6">           
               <div class="block-list"> 
                 <ul> 
                   <li><a>contacto@weeare.pe</a></li>
@@ -187,7 +223,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/slick.min.js"></script>
+      <script src="js/plugins.js"></script>
       <script src="js/functions.js?v=0.0.2"></script>
     </div>
   </body>
