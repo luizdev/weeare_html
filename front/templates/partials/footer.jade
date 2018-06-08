@@ -29,6 +29,25 @@
         .logo
           img(src="img/logo-weeare-blanco.png")
 
+#mdlContacto.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mdlContactoLabel', aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        .image
+          img(src="img/logo_color.png", alt="")
+        h5.modal-title Déjanos un mensaje y en breve nos pondremos en contacto.
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form
+          .form-group
+            input#nomapeform.form-control(type='email', aria-describedby='emailHelp', placeholder='Nombre y Apellido')
+          .form-group
+            input#emailform.form-control(type='password', placeholder='Email')
+          .form-group
+            textarea#mensajeform.form-control(placeholder='Mensaje')
+          .form-btn
+            button.btn.btn-black(type='submit') Enviar
 
 
 block scriptsFoot

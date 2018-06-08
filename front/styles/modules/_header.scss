@@ -30,8 +30,12 @@
         color: #7f7c80;
         font-size: 1.125em;
         text-decoration: none;
-        i{
-          margin: 0 5px 0 0;
+        &:hover{
+          color: #000;
+        }       
+        &.active{
+          font-weight: 700;
+          color: #000;
         }
       }
     }
