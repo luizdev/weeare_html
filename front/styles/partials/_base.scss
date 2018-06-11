@@ -41,7 +41,7 @@ img{
 }
 
 .btn{
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   border-radius: 25px;
   border: none;
   font-weight: 500;
@@ -53,11 +53,22 @@ img{
     background: #fff;
     color: #000;
   }
+  &.btn-secondary{
+    background: #000;
+    color: #fff;
+  }
   &.btn-min{
     padding: 0.5em 1em;
   }
   &:active:hover{
 
+  }
+  &.btn-lg{
+    font-size: 1.375em;
+    padding: 0.5em 2em;
+  }
+  &.btn-thin{
+    padding: 0.5em 3.5em;
   }
 }
 
@@ -150,9 +161,10 @@ section.main{
   background: url("../img/img_home_princ.jpg");
   background-size: cover;
   background-attachment: fixed;
-  h2{
+  h1{
     color: #fff;
-    margin: 2em 0 0 0;
+    margin: 3em 0 0 0;
+    text-align: center;
   }
 }
 
@@ -179,7 +191,12 @@ section.main{
     li{
       display: inline-block;
       vertical-align: middle;
-      margin: 0 3em;
+      margin: 0 1%;
+      width: 30%;
+      text-align: center;
+      img{
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -200,6 +217,7 @@ section.main{
   transition: all 0.1s ease-in-out;
   display: block;
   padding: 1em;
+  min-height: 370px;
   &:hover{
     box-shadow: 0 14px 56px -20px rgba(0,0,0,.64);
     transition-timing-function: ease-out;
@@ -259,13 +277,19 @@ section.main{
 
 .form-control{
   border: 1px solid #ccc;
-  padding: 0.4em;
-  border-radius: 0;
-  box-shadow: none;
+  padding: 0.6em;
+  border-radius: 3px;
+  box-shadow: none;  
+  height: 40px;
 }
 
 .modal-header{
   border: none;
+  .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
   .image{
     text-align: center;
     img{
@@ -278,5 +302,18 @@ section.main{
     font-size: 1em;
     font-weight: 400;
     font-family: "ProximaNova", sans-serif;
+  }
+}
+
+
+#mdlContacto {  
+  .modal-body{
+    padding: 15px 4em;
+    .form-btn{
+      margin-top: 1.5em;
+    }
+  }
+  textarea{
+    min-height: 120px;
   }
 }

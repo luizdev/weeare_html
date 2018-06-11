@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
     <title>Home</title>
     <link rel="stylesheet" href="css/main.css?v=0.0.4"/>
-    <link rel="stylesheet" href="css/slick.css?v=0.0.4"/>
-    <link rel="stylesheet" href="css/slick-theme.css?v=0.0.4"/>
-    <link rel="stylesheet" href="css/jquery.fullPage.css?v=0.0.4"/>
     <link rel="shortcut icon" href="/favicon.ico"/>
   </head>
-  <body class="home">   
+  <body data-spy="scroll" data-offset="80" data-target=".navbar-fixed-top" class="home">  
     <div id="page" class="wrapper">
       <!-- HEADER DEL SITIO-->
       <header id="header" class="full-width">
         <navbar class="navbar-fixed-top">
-          <div class="container cf">
-            <div class="row">
-              <div class="col-md-3 col-sm-4 col-xs-6 navbar-header">
-                <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <div class="wrap-logo logo-container">
-                  <div class="logo-wrap local-scroll">
-                    <h1 class="logo"><a href="">weeare</a></h1>
+          <div class="navigation-overlay">
+            <div class="container cf">
+              <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6 navbar-header">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                  <div class="wrap-logo logo-container">
+                    <div class="logo-wrap local-scroll">
+                      <h1 class="logo"><a href="">weeare</a></h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-9 col-sm-8 col-xs-6">
-                <ul class="menu local-scroll-no-offset">
-                  <li><a href="#quieneses_somos">¿Quiénes somos?</a></li>
-                  <li><a href="#que_hacemos">¿Qué hacemos?</a></li>
-                  <li><a href="#como_hacemos">¿Cómo lo hacemos?</a></li>
-                  <li><a href="#confian">Confian</a></li>
-                </ul>
+                <div class="col-md-9 col-sm-8col-xs-12 nav-wrap">
+                  <div id="navbar-collapse" class="collapse navbar-collapse text-center">
+                    <ul class="nav navbar-nav menu local-scroll-no-offset">
+                      <li><a href="#quieneses_somos">¿Quiénes somos?</a></li>
+                      <li><a href="#que_hacemos">¿Qué hacemos?</a></li>
+                      <li><a href="#como_hacemos">¿Cómo lo hacemos?</a></li>
+                      <li><a href="#confian">Confian</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -44,7 +45,7 @@
             <div class="cnt-table-cell top">
               <div class="row">  
                 <div class="col-md-12">        
-                  <h2>Beneficios pensando en el <br/> Costumer Journey de tus clientes</h2>
+                  <h1>Beneficios pensando en el <br/> Costumer Journey de tus clientes</h1>
                 </div>
               </div>
             </div>
@@ -93,30 +94,27 @@
                 </div>
                 <div class="col-md-4">
                   <div class="item-hacemos">
-                    <h3>Gestionamos beneficios</h3>
+                    <h3>Plataforma tecnológica</h3>
                     <div class="image"><img src="img/icono_plataforma.png" alt=""/></div>
                     <div class="detail">
                       <ul>
-                        <li>Diseño de estrategia</li>
-                        <li>Contacto, seguimiento y cierre</li>
-                        <li>Capacitaciones</li>
-                        <li>Mystery shopper</li>
-                        <li>Costumer service	</li>
+                        <li>API</li>
+                        <li>Web responsive</li>
+                        <li>Segmentación de oferta y demanda</li>
+                        <li>Sistema de validación	</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="item-hacemos">
-                    <h3>Gestionamos beneficios</h3>
+                    <h3>Gestionamos la información</h3>
                     <div class="image"><img src="img/icono_informacion.png" alt=""/></div>
                     <div class="detail">
                       <ul>
-                        <li>Diseño de estrategia</li>
-                        <li>Contacto, seguimiento y cierre</li>
-                        <li>Capacitaciones</li>
-                        <li>Mystery shopper</li>
-                        <li>Costumer service	</li>
+                        <li>Procesamiento de la información</li>
+                        <li>Reportes de utilización</li>
+                        <li>Reportes de perfil de usuario	</li>
                       </ul>
                     </div>
                   </div>
@@ -158,7 +156,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="cnt-btn"><a href="" data-toggle="modal" data-target="#mdlContacto" class="btn btn-primary">Contáctanos</a></div>
+                  <div class="cnt-btn"><a href="" data-toggle="modal" data-target="#mdlContacto" class="btn btn-lg btn-primary">Contáctanos</a></div>
                 </div>
               </div>
             </div>
@@ -188,19 +186,19 @@
       <div id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-sm-6"> 
+            <div class="col-md-4 col-sm-12"> 
               <div class="block-list menu"> 
-                <ul> 
-                  <li><a>Sobre nosotros</a></li>
-                  <li><a>Servicios</a></li>
-                  <li><a>Blog</a></li>
+                <ul class="local-scroll-no-offset"> 
+                  <li><a href="#quieneses_somos">Sobre nosotros</a></li>
+                  <li><a href="#que_hacemos">Servicios</a></li>
+                  <li><a href="https://medium.com/weeare" target="_blank">Blog</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-6">           
+            <div class="col-md-6 col-sm-12 col-xs-12">           
               <div class="block-list"> 
                 <ul> 
-                  <li><a>contacto@weeare.pe</a></li>
+                  <li><a href="mailto:contacto@weeare.pe">contacto@weeare.pe</a></li>
                   <li>Av. República de Panamá 3952 Miraflores</li>
                   <li>Telf: (01) 2217330</li>
                 </ul>
@@ -213,7 +211,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p class="copyrigth">Todos los derechos reservados @weeare 2018</p>
+              <p class="copyright">Todos los derechos reservados @weeare 2018</p>
             </div>
             <div class="col-md-6">
               <div class="logo"><img src="img/logo-weeare-blanco.png"/></div>
@@ -230,7 +228,7 @@
               <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="frmConctacto">
                 <div class="form-group">
                   <input id="nomapeform" type="email" aria-describedby="emailHelp" placeholder="Nombre y Apellido" class="form-control"/>
                 </div>
@@ -240,10 +238,21 @@
                 <div class="form-group">
                   <textarea id="mensajeform" placeholder="Mensaje" class="form-control"></textarea>
                 </div>
-                <div class="form-btn">
-                  <button type="submit" class="btn btn-black">Enviar</button>
+                <div class="form-btn text-center">
+                  <button type="submit" class="btn btn-lg btn-secondary btn-thin">Enviar</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mdlThanks" tabindex="-1" role="dialog" aria-labelledby="mdlThanks" aria-hidden="true" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="image"><img src="img/logo_color.png" alt=""/></div>
+              <h5 class="modal-title">Envio Satisfactorio</h5>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
             </div>
           </div>
         </div>

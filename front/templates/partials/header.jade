@@ -1,33 +1,35 @@
 
 header#header.full-width
   navbar.navbar-fixed-top
-    .container.cf
-      .row
-        .col-md-3.col-sm-4.col-xs-6.navbar-header
+    .navigation-overlay
+      .container.cf
+        .row
+          .col-md-3.col-sm-4.col-xs-6.navbar-header
 
-          //-a.navbar-toggle.collapsed(href="#menu")
-            span.sr-only ...
-            i.fa.fa-bars.fa-3(aria-hidden='true')
+            //-a.navbar-toggle.collapsed(href="#menu")
+              span.sr-only ...
+              i.fa.fa-bars.fa-3(aria-hidden='true')
 
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
 
-          .wrap-logo.logo-container
-            .logo-wrap.local-scroll
-              h1.logo
-                a(href="") weeare
-        
-        .col-md-9.col-sm-8.col-xs-6
-          ul.menu.local-scroll-no-offset
-            li
-              a(href="#quieneses_somos") ¿Quiénes somos?
-            li
-              a(href="#que_hacemos") ¿Qué hacemos?
-            li
-              a(href="#como_hacemos") ¿Cómo lo hacemos?
-            li
-              a(href="#confian") Confian
+            .wrap-logo.logo-container
+              .logo-wrap.local-scroll
+                h1.logo
+                  a(href="") weeare
+          
+          .col-md-9.col-sm-8col-xs-12.nav-wrap
+            #navbar-collapse.collapse.navbar-collapse.text-center
+              ul.nav.navbar-nav.menu.local-scroll-no-offset
+                li
+                  a(href="#quieneses_somos") ¿Quiénes somos?
+                li
+                  a(href="#que_hacemos") ¿Qué hacemos?
+                li
+                  a(href="#como_hacemos") ¿Cómo lo hacemos?
+                li
+                  a(href="#confian") Confian
 

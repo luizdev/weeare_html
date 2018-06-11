@@ -1,21 +1,21 @@
 #footer
   .container
     .row
-      .col-md-4.col-sm-6 
+      .col-md-4.col-sm-12 
         .block-list.menu 
-          ul  
+          ul.local-scroll-no-offset  
             li
-              a Sobre nosotros
+              a(href="#quieneses_somos") Sobre nosotros
             li
-              a Servicios
+              a(href="#que_hacemos") Servicios
             li
-              a Blog
+              a(href="https://medium.com/weeare" target="_blank") Blog
          
-      .col-md-6.col-sm-6.col-xs-6            
+      .col-md-6.col-sm-12.col-xs-12            
         .block-list 
           ul  
             li
-              a contacto@weeare.pe
+              a(href="mailto:contacto@weeare.pe") contacto@weeare.pe
 
             li Av. República de Panamá 3952 Miraflores
 
@@ -24,7 +24,7 @@
   .container
     .row
       .col-md-6
-        p.copyrigth Todos los derechos reservados @weeare 2018
+        p.copyright Todos los derechos reservados @weeare 2018
       .col-md-6
         .logo
           img(src="img/logo-weeare-blanco.png")
@@ -39,15 +39,26 @@
         button.close(type='button', data-dismiss='modal', aria-label='Close')
           span(aria-hidden='true') ×
       .modal-body
-        form
+        form#frmConctacto
           .form-group
             input#nomapeform.form-control(type='email', aria-describedby='emailHelp', placeholder='Nombre y Apellido')
           .form-group
             input#emailform.form-control(type='password', placeholder='Email')
           .form-group
             textarea#mensajeform.form-control(placeholder='Mensaje')
-          .form-btn
-            button.btn.btn-black(type='submit') Enviar
+          .form-btn.text-center
+            button.btn.btn-lg.btn-secondary.btn-thin(type='submit') Enviar
+
+#mdlThanks.modal.fade(tabindex='-1', role='dialog', aria-labelledby='mdlThanks', aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        .image
+          img(src="img/logo_color.png", alt="")
+        h5.modal-title Envio Satisfactorio
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+     
 
 
 block scriptsFoot

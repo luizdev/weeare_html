@@ -17,26 +17,47 @@
 		$(window).trigger("resize");
 		initOnepagenav();
 
-		/*$('#fullpage').fullpage({
-			normalScrollElements: '#footer, #footer-bottom'
-		});*/
-		
+		$(document).on('hidden.bs.modal', function (event) {
+			if ($('.modal:visible').length) {
+				$('body').addClass('modal-open');
+			}
+		});
+
+		$("#frmConctacto").submit(function(e) {
+
+			//prevent Default functionality
+			e.preventDefault();
+
+			$('#mdlContacto').modal('hide');
+			setTimeout( function(){$("#mdlThanks").modal('show')}, 400 );
+	
+			//get the action-url of the form
+			//var actionurl = e.currentTarget.action;
+	
+			//do your own request an handle the results
+			/*$.ajax({
+					url: actionurl,
+					type: 'post',
+					dataType: 'application/json',
+					data: $("#myform").serialize(),
+					success: function(data) {
+						
+					}
+			});*/	
+		});
+
 	});
 
 	
 	/* Full Height Container 
     -------------------------------------------------------*/         
     $(window).resize(function(){    
-		container_full_height_init();
 		var windowWidth = $(window).width();
 		if (windowWidth <= 974) {
-            $(".dropdown-toggle").attr("data-toggle", "dropdown");
-            $(".navigation").removeClass("sticky offset scrolling");
             $(".header ").find(".local-scroll-no-offset").removeClass("local-scroll-no-offset").addClass("local-scroll");
         }
         if (windowWidth > 974) {
-            $(".dropdown-toggle").removeAttr("data-toggle", "dropdown");
-            $(".dropdown").removeClass("open");
+
             $(".header ").find(".local-scroll").removeClass("local-scroll").addClass("local-scroll-no-offset");
         }
 	});
@@ -54,11 +75,6 @@
 
 /* Full Height Container
 -------------------------------------------------------*/
-function container_full_height_init(){
-	(function($){
-		//$(".container-full-height").height($(window).height());
-	})(jQuery);
-}
 
 function initOnepagenav(){
         

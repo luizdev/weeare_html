@@ -3,7 +3,7 @@ html(lang="es")
   - var home = true
   include partials/head
 
-  body.home    
+  body.home(data-spy="scroll" data-offset="80" data-target=".navbar-fixed-top")   
     div#page.wrapper
       // HEADER DEL SITIO
       include partials/header    
@@ -11,16 +11,13 @@ html(lang="es")
       
       
       block content 
-
-
-
         section#one-img.section-wrap
           .container.container-full-height
             .cnt-table
               .cnt-table-cell.top
                 .row   
                   .col-md-12         
-                    h2 Beneficios pensando en el <br/> Costumer Journey de tus clientes
+                    h1 Beneficios pensando en el <br/> Costumer Journey de tus clientes
 
         section#quieneses_somos.section-wrap.nopad
           .container.container-full-height
@@ -55,28 +52,25 @@ html(lang="es")
                           li Costumer service		
                   .col-md-4
                     .item-hacemos
-                      h3 Gestionamos beneficios
+                      h3 Plataforma tecnológica
                       .image
                         img(src="img/icono_plataforma.png", alt="")
                       .detail
                         ul
-                          li Diseño de estrategia
-                          li Contacto, seguimiento y cierre
-                          li Capacitaciones
-                          li Mystery shopper
-                          li Costumer service	
+                          li API
+                          li Web responsive
+                          li Segmentación de oferta y demanda
+                          li Sistema de validación	
                   .col-md-4
                     .item-hacemos
-                      h3 Gestionamos beneficios
+                      h3 Gestionamos la información
                       .image
                         img(src="img/icono_informacion.png", alt="")
                       .detail
                         ul
-                          li Diseño de estrategia
-                          li Contacto, seguimiento y cierre
-                          li Capacitaciones
-                          li Mystery shopper
-                          li Costumer service	
+                          li Procesamiento de la información
+                          li Reportes de utilización
+                          li Reportes de perfil de usuario	
         section#como_hacemos.section-wrap
           .container.container-full-height
             .title-page.absolute
@@ -105,7 +99,7 @@ html(lang="es")
                          li Tecnológico
                          li Información
                     .cnt-btn
-                      a.btn.btn-primary(href="", data-toggle="modal" data-target="#mdlContacto") Contáctanos
+                      a.btn.btn-lg.btn-primary(href="", data-toggle="modal" data-target="#mdlContacto") Contáctanos
                          
         section#confian.section-wrap
           .container
