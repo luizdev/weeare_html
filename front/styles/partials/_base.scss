@@ -40,6 +40,10 @@ img{
   height: auto;
 }
 
+p{
+  font-family: akkuratLight;
+}
+
 .btn{
   padding: 0.5em 1em;
   border-radius: 25px;
@@ -166,6 +170,7 @@ section.main{
     margin: 3em 0 0 0;
     text-align: center;
   }
+  
 }
 
 
@@ -173,10 +178,16 @@ section.main{
   background: #1e1e1e;
   color: #fff;
   font-size: 1.500em;
+  p{
+    text-align: justify;
+  }
 }
 
 #confian.section-wrap{
   background: #fff;
+  .cnt-table-cell.top{
+    padding: 20% 0 0 0;
+  }
   .title-page{
     text-align: center;
     margin-bottom: 2.5em;
@@ -216,8 +227,8 @@ section.main{
   overflow: hidden;
   transition: all 0.1s ease-in-out;
   display: block;
-  padding: 1em;
-  min-height: 370px;
+  padding: 2.5em 1em;
+  min-height: 418px;
   &:hover{
     box-shadow: 0 14px 56px -20px rgba(0,0,0,.64);
     transition-timing-function: ease-out;
