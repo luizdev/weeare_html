@@ -1,5 +1,5 @@
 {
-  "name": "Fanntop",
+  "name": "weeare",
   "version": "0.0.1",
   "description": "compass jade js",
   "author": "",
@@ -14,12 +14,12 @@
     "gulp-open": "^2.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.8",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "gulp-sass": "^4.0.1",
     "jquery": "*",
     "jquery-extend": "*"
   }
